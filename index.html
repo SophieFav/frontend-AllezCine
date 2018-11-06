@@ -19,13 +19,24 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid content">
+      <div class="container navcontent">
+        <nav class="navbar navbar-expand-sm bg navbar fixed-top navbartop">
                 <!-- Brand -->
                 <a class="navbar-brand logo" href="#"><span class="redlogo">ALLEZ</span>CINE!</a>
-              
+
+              <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon "></span>
+                  <span class="navbar-toggler-icon "></span>
+                  <span class="navbar-toggler-icon "></span>
+                </button>
+
                 <!-- Links -->
+                <div class="collapse navbar-collapse navright" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
@@ -40,27 +51,83 @@
                           <a class="dropdown-item" href="#">Link 2</a>
                           <a class="dropdown-item" href="#">Link 3</a>
                         </div>
-                      </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
                   </li>
-                  <form class="form-inline search" action="/action_page.php">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <form class="form-inline search inner-addon right-addon" action="/action_page.php">
+                    <i class="fa fa-search"></i>
+                    <input class="form-control mr-sm-2 formborder" type="text" placeholder="Recherche">
                   </form>
                 </ul>
-              </nav>
+              </div>
+          </nav>
+      </div>
+    </div>
 
     <div class="jumbotron">
-
-            <div class="carousel-item">
-                    <img src="la.jpg" alt="Los Angeles">
-                    <div class="carousel-caption">
-                        <h1>LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
-                        <p>IN SPACE NO ONE CAN HEAR YOU SCREAM</p>
-                        <button type="button" class="btn">WATCH TRAILER</button> 
+            <div id="slide" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                      <li class="carouselLink" data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li class="carouselLink" data-target="#demo" data-slide-to="1"></li>
+                      <li class="carouselLink" data-target="#demo" data-slide-to="2"></li>
+                      <li class="carouselLink" data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                      <div class="carousel-item avantoi active">
+                          <!--<img src="img/avantoi.jpg" alt="film">-->
+                        <div class="carousel-caption">
+                                <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                                <p class="sentence">PUSH YOURSELF. DON'T SETTLE. JUST LIVE.</p>
+                                <button type="button" class="btn">WATCH TRAILER</button> 
+                        </div>   
+                      </div>
+                      <div class="carousel-item thestrangers">
+                           <!--<img src="img/Thestrangers2.jpg" alt="film">-->
+                          <div class="carousel-caption">
+                                  <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                                  <p class="sentence">IF YOU'RE LUCKY, YOU DIE FIRST.</p>
+                                  <button type="button" class="btn">WATCH TRAILER</button> 
+                          </div>   
+                        </div>
+                      <div class="carousel-item antman">
+                          <!--<img src="img/avantoi.jpg" alt="film">-->
+                        <div class="carousel-caption">
+                            <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                            <p class="sentence">HEROES DON'T GET ANY BIGGER</p>
+                            <button type="button" class="btn">WATCH TRAILER</button>
+                        </div>   
+                      </div>
+                      <div class="carousel-item indestructibles">
+                            <!--<img src="img/avantoi.jpg" alt="film">-->
+                        <div class="carousel-caption">
+                            <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                            <p class="sentence">THEY'RE BACK! THEY'RE SUPER HEROES AND THEY'RE INVISIBLE</p>
+                            <button type="button" class="btn">WATCH TRAILER</button>
+                        </div>   
+                      </div>
                     </div>
-            </div>
+                    <a class="carousel-control-prev" href="#slide" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#slide" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+                  <nav class="navbar navbar-expand-sm bg navbar navbarbottom">
+                      <!-- Links -->
+                      <ul class="navbar-nav infos">
+                          <li class="nav-item">
+                             <div class="nav-link tel">(+000)009 455 4088</div>
+                            </li>
+                        <li class="nav-item">
+                          <a class="nav-link contact" href="#">login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link contact" href="#">register</a>
+                        </li>
+                      </ul>
+                  </nav>
     </div>
 </body>
 </html>
