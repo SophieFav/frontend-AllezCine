@@ -1,0 +1,34 @@
+body{
+    .sectionFilm{
+        .container{
+            border: solid 2px grey;
+            padding: 5px 0px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            .film{
+                justify-content: center;
+                padding: 0;
+                margin: 0px 5px;
+                img{
+
+                }
+                .filmTitre{
+                }
+                .filmDonnées{
+                    margin:0;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: space-between;
+                    font-size: 0.5em;
+                    .filmDate{
+                        
+                    }
+                    .filmGenre{
+
+                    }
+                }
+            }
+        }
+    }
+}
