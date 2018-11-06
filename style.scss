@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+//boutons réseaux
+.reseaux{
+    li{
+        display:flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        text-decoration: none;
+        list-style-type: none;
+        text-align: center;
+        align-items: center;
+        width: 150px;
+        height:50px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px; 
+        margin-bottom: 5px;
+        transform: translate(-90px, 0px);
+        p{
+            overflow: hidden;
+            
+            width:100px;
+            color:white;
+        }
+        button{
+            width:30px;
+            height:30px;
+            background-color:white;
+            border-radius:50%;
+            border:none;
+        }
+    }
+    li:hover {
+        transform: translate(0, 0);
+            }
+}
+}
