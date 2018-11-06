@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.navbartop {
+  background: transparent;
+  margin-top: 1%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: distribute !important;
+  justify-content: space-around !important; }
+  .navbartop .navright {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .navbartop a {
+    color: #fff !important; }
+  .navbartop .navbar-toggler {
+    background-color: #000;
+    opacity: 0.8;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 10px; }
+    .navbartop .navbar-toggler .navbar-toggler-icon {
+      color: #fff;
+      background-color: #fe4240;
+      height: 3px;
+      margin: 3px; }
+  .navbartop .logo {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif; }
+    .navbartop .logo .redlogo {
+      color: #fe4240; }
+  .navbartop .search {
+    position: relative; }
+    .navbartop .search .formborder {
+      border-radius: 30px;
+      background-color: #000;
+      opacity: 0.7;
+      border: none;
+      height: 30px; }
+    .navbartop .search .btn {
+      border-radius: 30px; }
+    .navbartop .search .fa-search {
+      color: #fff !important;
+      position: absolute; }
+    .navbartop .search .fa {
+      right: 8%; }
+
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.carousel-inner img {
+  margin-top: -10%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.carousel-caption {
+  bottom: 35% !important; }
+  .carousel-caption .title {
+    font-size: 50px;
+    font-weight: bold; }
+  .carousel-caption .sentence {
+    font-size: 12px;
+    letter-spacing: 5px;
+    opacity: 0.7; }
+  .carousel-caption .btn {
+    background-color: #fe4240;
+    border-radius: 0;
+    color: #fff;
+    font-size: 12px; }
+  .carousel-caption .redletter {
+    color: #fe4240;
+    font-size: 53px; }
+
+#myCarousel {
+  width: 100%; }
+
+.carousel, .carousel-inner, .carousel-item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.avantoi {
+  background-image: url("../img/avantoi.jpg"); }
+
+.thestrangers {
+  background-image: url("../img/Thestrangers2.jpg"); }
+
+.antman {
+  background-image: url("../img/antman.jpg"); }
+
+.indestructibles {
+  background-image: url("../img/indestructibles.jpg"); }
+
+.carousel-indicators {
+  bottom: 32% !important; }
+  .carousel-indicators .carouselLink {
+    background-color: #fff !important; }
+  .carousel-indicators .active {
+    background-color: #fe4240 !important; }
+
+#slide {
+  width: 100vw;
+  height: 100vh; }
+
+.navbarbottom {
+  background-color: #fe4240;
+  margin-top: -4.2em;
+  width: 100%;
+  height: 6%;
+  font-size: 12px;
+  color: #fff;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+  .navbarbottom .contact {
+    background-color: #000;
+    margin-right: 5%;
+    color: #fff; }
+
+@media all and (max-width: 1024px) {
+  .navbartop {
+    background-color: #111;
+    margin-top: 0%; }
+  .carousel-caption {
+    margin-bottom: -8%; }
+  .carousel-indicators {
+    margin-bottom: -6%; }
+  .navbarbottom {
+    margin-top: -22%;
+    position: absolute; }
+  .infos {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important; }
+  .tel {
+    margin-left: 20px; }
+  .contact {
+    margin-left: 20px;
+    width: 70px; }
+  .carousel, .carousel-inner, .carousel-item {
+    height: 97%; } }
+
+/*
+@media all and (min-width:768px) {
+    .navbarbottom{
+        margin-top:-10%;
+        position:absolute;
+    }
+    .carousel-caption{
+        margin-bottom:-3%;
+    }
+}*/
