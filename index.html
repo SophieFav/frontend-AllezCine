@@ -22,9 +22,10 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+    <script src="js/popup_age.js"></script>
     <div class="container-fluid content">
       <div class="container navcontent">
-        <nav class="navbar navbar-expand-sm bg navbar fixed-top navbartop" id="myNavbar">
+        <nav class="navbar navbar-expand-sm bg navbar fixed-top navbartop">
                 <!-- Brand -->
                 <a class="navbar-brand logo" href="#"><span class="redlogo">ALLEZ</span>CINE!</a>
 
@@ -47,10 +48,10 @@
                           Genre
                         </a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Romance</a>
-                          <a class="dropdown-item" href="#">Horreur</a>
-                          <a class="dropdown-item" href="#">Fiction</a>
-                          <a class="dropdown-item" href="#">Comedie</a>
+                          <a class="dropdown-item" href="#romance">Romance</a>
+                          <a class="dropdown-item" href="#horreur">Horreur</a>
+                          <a class="dropdown-item" href="#fiction">Fiction</a>
+                          <a class="dropdown-item" href="#comedie">Comedie</a>
                         </div>
                   </li>
                   <li class="nav-item boxsection">
@@ -145,8 +146,16 @@
                     pour réaliser des statistiques de visites anonymes. <a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi" target="_blank">En savoir plus</a></p>
                     <button class="gdpr-button-accept">Accept cookies</button>
                 </div>
+
+                <!--<div id="dialog-message" class="modal18" title="">
+                    <p class='text_modal18'><span class=" ui-icon-alert"></span >Avez-vous plus de 18 ans?</p>
+                </div>-->
+
+                  <div class="container">
+                    <h1>You are old enough to see whatever is here...</h1>
+                  </div>
+
 <script src="js/script.js"></script>
-<script src="js/jquery.cookie.js"></script>
 <script src="scrollspy.js"></script>
 </body>
 </html>

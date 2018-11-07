@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
+/* POP UP AGE */
+.modal18 {
+  background-color: #747474;
+  height: 100px;
+  margin-top: 20%;
+  position: relative; }
+
 /* COOKIE */
 #gdpr-box {
   display: block;
@@ -104,7 +111,7 @@
     margin-right: 5px;
     position: relative; }
   .navbartop .boxsection {
-    background-color: #747474;
+    background-color: rgba(255, 255, 255, 0.1);
     margin-right: 5px; }
   .navbartop .dropdown-menu {
     background-color: #fff;
@@ -117,19 +124,26 @@
         background-color: #fe4240; }
   .navbartop .search {
     position: relative; }
-    .navbartop .search .formborder {
-      border-radius: 30px;
-      background-color: #000;
-      opacity: 0.7;
-      border: none;
-      height: 30px; }
-    .navbartop .search .btn {
-      border-radius: 30px; }
     .navbartop .search .fa-search {
       color: #fff !important;
       position: absolute; }
     .navbartop .search .fa {
       right: 8%; }
+    .navbartop .search .formborder {
+      border-radius: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      height: 30px; }
+    .navbartop .search input::-webkit-input-placeholder {
+      color: #fff; }
+    .navbartop .search input:-ms-input-placeholder {
+      color: #fff; }
+    .navbartop .search input::-ms-input-placeholder {
+      color: #fff; }
+    .navbartop .search input::placeholder {
+      color: #fff; }
+    .navbartop .search .btn {
+      border-radius: 30px; }
 
 /* JUMBOTRON */
 .jumbotron {
@@ -232,6 +246,16 @@
     padding-left: 0px !important;
     background-color: none;
     padding: 10px !important; }
+  .boxsection {
+    background-color: transparent !important; }
+  .section {
+    background-color: transparent !important; }
+  .search {
+    width: 100%; }
+  .contact {
+    width: 70px; }
+  .carousel, .carousel-inner, .carousel-item {
+    height: 97%; }
   .carousel-caption {
     margin-bottom: -8%; }
   .carousel-indicators {
@@ -239,10 +263,6 @@
   .navbarbottom {
     margin-top: -22%;
     position: absolute; }
-  .boxsection {
-    background-color: transparent !important; }
-  .section {
-    background-color: transparent !important; }
   .infos {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -250,13 +270,7 @@
     flex-direction: row !important;
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
-    justify-content: center !important; }
-  .search {
-    width: 100%; }
-  .contact {
-    width: 70px; }
-  .carousel, .carousel-inner, .carousel-item {
-    height: 97%; } }
+    justify-content: center !important; } }
 
 /*
 @media all and (min-width:768px) {

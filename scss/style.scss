@@ -5,6 +5,21 @@
     font-family:sans-serif
 }
 
+
+/* POP UP AGE */
+
+.modal18{
+    background-color:#747474;
+    height:100px;
+    margin-top:20%;
+    position:relative;
+}
+
+.ui-icon-alert{
+
+}
+
+
 /* COOKIE */
 
 #gdpr-box {
@@ -120,7 +135,7 @@
     }
 
     .boxsection{
-        background-color:#747474;
+        background-color: rgba(255, 255, 255, 0.1);
         margin-right:5px;
     }
 
@@ -143,18 +158,6 @@
     .search{
         position:relative;
 
-        .formborder{
-            border-radius:30px;
-            background-color:#000;
-            opacity:0.7;
-            border:none;
-            height:30px;
-            
-        }
-        .btn{
-            border-radius:30px;
-        }
-
         .fa-search{
             color:#fff!important;
             position:absolute;
@@ -162,6 +165,21 @@
 
         .fa{
             right:8%;
+        }
+
+        .formborder{
+            border-radius:30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border:none;
+            height:30px;
+            
+        }
+
+        input::placeholder{
+            color:#fff;
+        }
+        .btn{
+            border-radius:30px;
         }
     }
 }
@@ -298,6 +316,27 @@
         background-color:none;
         padding:10px!important;
     }
+
+    .boxsection{
+        background-color:transparent!important;
+    }
+
+    .section{
+        background-color:transparent!important;
+
+    }
+
+    .search{
+        width:100%;
+    }
+
+    .contact{
+        width:70px;
+    }
+    .carousel, .carousel-inner,.carousel-item{
+        height:97%;
+    }
+
     .carousel-caption{
         margin-bottom:-8%;
     }
@@ -310,30 +349,10 @@
         margin-top:-22%;
         position:absolute;
     }
-
-    .boxsection{
-        background-color:transparent!important;
-    }
-
-    .section{
-        background-color:transparent!important;
-
-    }
-
+    
     .infos{
         flex-direction:row!important;
         justify-content:center!important;
-    }
-
-    .search{
-        width:100%;
-    }
-
-    .contact{
-        width:70px;
-    }
-    .carousel, .carousel-inner,.carousel-item{
-        height:97%;
     }
 }
 /*
