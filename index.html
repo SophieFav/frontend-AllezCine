@@ -38,34 +38,45 @@
                 <!-- Links -->
                 <div class="collapse navbar-collapse navright" id="collapsibleNavbar">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
                   </li>
                   <!-- Dropdown -->
                   <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle genre" href="#" id="navbardrop" data-toggle="dropdown">
                           Genre
                         </a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Link 1</a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
+                          <a class="dropdown-item" href="#">Romance</a>
+                          <a class="dropdown-item" href="#">Horreur</a>
+                          <a class="dropdown-item" href="#">Fiction</a>
+                          <a class="dropdown-item" href="#">Comedie</a>
                         </div>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                  <li class="nav-item boxsection">
+                    <a class="nav-link section" href="#sectionFilm">Movies</a>
                   </li>
+                  <li class="nav-item boxsection">
+                    <a class="nav-link section" href="#shop">Shop Movies</a>
+                  </li>
+                  <li class="nav-item boxsection">
+                    <a class="nav-link section" href="#features">Features Movies</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link contact" href="#contact">Contact</a>
+                  </li>
+                </div>
                   <form class="form-inline search inner-addon right-addon" action="/action_page.php">
                     <i class="fa fa-search"></i>
                     <input class="form-control mr-sm-2 formborder" type="text" placeholder="Recherche">
                   </form>
                 </ul>
-              </div>
           </nav>
       </div>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
             <div id="slide" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
                       <li class="carouselLink" data-target="#demo" data-slide-to="0" class="active"></li>
@@ -115,7 +126,6 @@
                     </a>
                   </div>
                   <nav class="navbar navbar-expand-sm bg navbar navbarbottom">
-                      <!-- Links -->
                       <ul class="navbar-nav infos">
                           <li class="nav-item">
                              <div class="nav-link tel">(+000)009 455 4088</div>
@@ -128,6 +138,14 @@
                         </li>
                       </ul>
                   </nav>
-    </div>
+                </div>
+
+                <div id="gdpr-box" class="cookies-accept">
+                    <p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies
+                    pour réaliser des statistiques de visites anonymes. <a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi" target="_blank">En savoir plus</a></p>
+                    <button class="gdpr-button-accept">Accept cookies</button>
+                </div>
+<script src="js/script.js"></script>
+<script src="js/jquery.cookie.js"></script>
 </body>
 </html>

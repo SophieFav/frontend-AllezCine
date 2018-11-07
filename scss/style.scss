@@ -5,17 +5,80 @@
     font-family:sans-serif
 }
 
+/* COOKIE */
+
+#gdpr-box {
+    display: block;
+    width: 100%;
+    background-color:#111;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    padding:20px;
+    z-index: 999;
+    }
+
+    #gdpr-box p {
+    /*padding: 10px 20px 20px;*/
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 20px;
+    text-align:center;
+    }
+
+    #gdpr-box a {
+    color: #fff;
+    }
+
+    #gdpr-box button.gdpr-button-accept {
+    background: none;
+    color: #fff;
+    font-size: 12px;
+    padding-left:20%;
+    }
+
+    #gdpr-box button.gdpr-button-accept,
+    #gdpr-box a.gdpr-button-settings {
+    display: block;
+    border: 1px solid #fff;
+    padding: 6px 5px 4px;
+    text-decoration: none;
+   /* margin: 0 0 20px 20px;*/
+    margin:auto;
+    margin-bottom:20px;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 12px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    }
+
+    #gdpr-box button.gdpr-button-accept:hover {
+    cursor: pointer;
+    }
+
+    #gdpr-box button.gdpr-button-accept:hover,
+    #gdpr-box a.gdpr-button-settings:hover {
+    background: #fe4240;
+    }
+
+/* NAVBAR TOP */
+
 .navbartop{
         
     background:transparent;
     margin-top:1%;
     display:flex!important;
-    justify-content:space-around!important;
+    text-transform: uppercase;
+    font-size:12px;
 
     .navright{
-        justify-content:flex-end;
+        justify-content:space-between;
+        padding-left:100px;
     }
-
     a{
     color:#fff!important;
     }
@@ -45,6 +108,38 @@
         }
     }
 
+    .genre{
+        background-color:#fe4240;
+        color:#fff!important;
+        margin-right:5px;
+    }
+    .section{
+        color:#fff!important;
+        margin-right:5px;
+        position:relative;
+    }
+
+    .boxsection{
+        background-color:#747474;
+        margin-right:5px;
+    }
+
+
+    .dropdown-menu{
+        background-color:#fff;
+        border-radius:0;
+
+        .dropdown-item{
+            font-size:12px;
+            color:#000!important;
+
+            &:hover{
+                color:#fff!important;
+                background-color:#fe4240;
+            }
+        }
+    }
+
     .search{
         position:relative;
 
@@ -70,6 +165,8 @@
         }
     }
 }
+
+/* JUMBOTRON */
 
 .jumbotron{
     width:100%;
@@ -108,6 +205,15 @@
         border-radius:0;
         color:#fff;
         font-size:12px;
+
+        &:hover{
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            background-color:#747474;
+            color:#fff;
+        }
     }
 
     .redletter{
@@ -150,7 +256,6 @@
     .carouselLink{
         background-color:#fff!important;
     }
-
     .active{
         background-color:#fe4240!important;
     }
@@ -160,6 +265,8 @@
     width:100vw;
     height:100vh;
 }
+
+/* NAVBAR BOTTOM */
 
 .navbarbottom{
     background-color:#fe4240;
@@ -178,15 +285,21 @@
     }
 }
 
+/* MEDIA QUERIES RESPONSIVE */
+
 @media all and (max-width: 1024px) {
     .navbartop{
         background-color:#111;
         margin-top:0%;
     }
 
+    .navright{
+        padding-left:0px!important;
+        background-color:none;
+        padding:10px!important;
+    }
     .carousel-caption{
         margin-bottom:-8%;
-
     }
 
     .carousel-indicators{
@@ -198,17 +311,25 @@
         position:absolute;
     }
 
+    .boxsection{
+        background-color:transparent!important;
+    }
+
+    .section{
+        background-color:transparent!important;
+
+    }
+
     .infos{
         flex-direction:row!important;
         justify-content:center!important;
     }
 
-    .tel{
-        margin-left:20px;
+    .search{
+        width:100%;
     }
 
     .contact{
-        margin-left:20px;
         width:70px;
     }
     .carousel, .carousel-inner,.carousel-item{
