@@ -7,18 +7,60 @@
 
 
 /* POP UP AGE */
+#popupage{
+position:fixed;
+left:50%;
+width:100%;
+height:100%;
+transform: translateX(-50%);
+background-color: rgba(0, 0, 0, 0.9);
+color:#fff;
+z-index:9999;
+display:flex;
+justify-content:center;
+flex-direction:column;
 
-.modal18{
-    background-color:#747474;
-    height:100px;
-    margin-top:20%;
-    position:relative;
+
+    .quest{
+        height:30px;
+        margin-right:10px;
+        line-height:5px;
+        padding:30px;
+        border:2px solid #fe4240;
+        margin: 0 28% 0 28%;
+        text-align:center;
+        font-size:25px;
+    }
+
+    .just-row{
+        display:flex;
+        flex-direction:row;
+        margin:0 30% 0 30%;
+        justify-content:center;
+
+        .btn{
+            background-color:rgba(255, 255, 255,1);
+            border-radius:0;
+            color:#fe4240;
+            height:30px;
+            margin:5px;
+            line-height:5px;
+            padding:30px;
+            padding-left :125px;
+            padding-right:125px;
+            text-align:center;
+            margin-top:-38px;
+            font-size:25px;
+            font-weight:bold;
+
+            &:hover{
+                background-color:#fe4240;
+                color:#fff;
+                transition: all 0.8s ease;
+            }
+        }
+    }
 }
-
-.ui-icon-alert{
-
-}
-
 
 /* COOKIE */
 
@@ -55,7 +97,7 @@
     #gdpr-box button.gdpr-button-accept,
     #gdpr-box a.gdpr-button-settings {
     display: block;
-    border: 1px solid #fff;
+    border: 2px solid #fe4240;
     padding: 6px 5px 4px;
     text-decoration: none;
    /* margin: 0 0 20px 20px;*/
@@ -78,6 +120,7 @@
     #gdpr-box button.gdpr-button-accept:hover,
     #gdpr-box a.gdpr-button-settings:hover {
     background: #fe4240;
+    border:2px solid #fe4240;
     }
 
 /* NAVBAR TOP */
@@ -295,6 +338,7 @@
     color:#fff;
     display:flex!important;
     justify-content:flex-start;
+    position:relative;
 
     .contact{
         background-color:#000;
@@ -354,9 +398,15 @@
         flex-direction:row!important;
         justify-content:center!important;
     }
+
+    .quest{
+        font-size:14px;
+    }
 }
-/*
-@media all and (min-width:768px) {
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  
     .navbarbottom{
         margin-top:-10%;
         position:absolute;
@@ -364,4 +414,10 @@
     .carousel-caption{
         margin-bottom:-3%;
     }
+    
+  }
+  
+/*
+@media all and (min-width:768px) {
+    
 }*/

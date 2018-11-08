@@ -5,11 +5,68 @@
   font-family: sans-serif; }
 
 /* POP UP AGE */
-.modal18 {
-  background-color: #747474;
-  height: 100px;
-  margin-top: 20%;
-  position: relative; }
+#popupage {
+  position: fixed;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  #popupage .quest {
+    height: 30px;
+    margin-right: 10px;
+    line-height: 5px;
+    padding: 30px;
+    border: 2px solid #fe4240;
+    margin: 0 28% 0 28%;
+    text-align: center;
+    font-size: 25px; }
+  #popupage .just-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0 30% 0 30%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #popupage .just-row .btn {
+      background-color: white;
+      border-radius: 0;
+      color: #fe4240;
+      height: 30px;
+      margin: 5px;
+      line-height: 5px;
+      padding: 30px;
+      padding-left: 125px;
+      padding-right: 125px;
+      text-align: center;
+      margin-top: -38px;
+      font-size: 25px;
+      font-weight: bold; }
+      #popupage .just-row .btn:hover {
+        background-color: #fe4240;
+        color: #fff;
+        -webkit-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        transition: all 0.8s ease; }
 
 /* COOKIE */
 #gdpr-box {
@@ -41,7 +98,7 @@
 #gdpr-box button.gdpr-button-accept,
 #gdpr-box a.gdpr-button-settings {
   display: block;
-  border: 1px solid #fff;
+  border: 2px solid #fe4240;
   padding: 6px 5px 4px;
   text-decoration: none;
   /* margin: 0 0 20px 20px;*/
@@ -61,7 +118,8 @@
 
 #gdpr-box button.gdpr-button-accept:hover,
 #gdpr-box a.gdpr-button-settings:hover {
-  background: #fe4240; }
+  background: #fe4240;
+  border: 2px solid #fe4240; }
 
 /* NAVBAR TOP */
 .navbartop {
@@ -231,7 +289,8 @@
   display: flex !important;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  position: relative; }
   .navbarbottom .contact {
     background-color: #000;
     margin-right: 5%;
@@ -270,15 +329,18 @@
     flex-direction: row !important;
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
-    justify-content: center !important; } }
+    justify-content: center !important; }
+  .quest {
+    font-size: 14px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbarbottom {
+    margin-top: -10%;
+    position: absolute; }
+  .carousel-caption {
+    margin-bottom: -3%; } }
 
 /*
 @media all and (min-width:768px) {
-    .navbarbottom{
-        margin-top:-10%;
-        position:absolute;
-    }
-    .carousel-caption{
-        margin-bottom:-3%;
-    }
+    
 }*/
