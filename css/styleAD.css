@@ -1,5 +1,9 @@
-@charset "UTF-8";
-body .sectionFilm .container {
+body .container {
+  position: relative;
+  width: 70%;
+}
+
+body .container .sectionFilm {
   border: solid 2px grey;
   padding: 5px 0px;
   display: -webkit-box;
@@ -7,13 +11,48 @@ body .sectionFilm .container {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-body .sectionFilm .container .film {
+body .container-fluid {
+  margin-top: 25px;
+  width: 80%;
+}
+
+body .container-fluid .sectionTitle {
+  border-left: solid 5px red;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+body .container-fluid .sectionTitle h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body .container-fluid .sectionBtnTri {
+  margin: 0;
+  padding: 0;
+}
+
+body .container-fluid .sectionBtnTri button {
+  border: none;
+  background-color: lightgrey;
+  margin: 1px;
+}
+
+body .container-fluid .sectionFeaturedFilm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.film {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -21,15 +60,21 @@ body .sectionFilm .container .film {
   margin: 0px 5px;
 }
 
-body .sectionFilm .container .film .filmDonnées {
+.film .filmTitre {
+  font-size: 1em;
+  width: 100%;
+}
+
+.film .filmDonnees {
   margin: 0;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
