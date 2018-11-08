@@ -2,38 +2,155 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
-//boutons réseaux
-.reseaux{
-    li{
-        display:flex;
-        flex-direction: row;
-        flex-flow: row wrap;
-        text-decoration: none;
-        list-style-type: none;
-        text-align: center;
-        align-items: center;
-        width: 150px;
-        height:50px;
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px; 
-        margin-bottom: 5px;
-        transform: translate(-90px, 0px);
-        p{
-            overflow: hidden;
-            
-            width:100px;
-            color:white;
+    
+    //boutons réseaux
+    .reseaux{
+        li{
+            display:flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            text-decoration: none;
+            list-style-type: none;
+            text-align: center;
+            align-items: center;
+            width: 150px;
+            height:50px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px; 
+            margin-bottom: 5px;
+            transform: translate(-90px, 0px);
+            p{
+                overflow: hidden;
+                width:100px;
+                color:white;
+            }
+            button{
+                width:30px;
+                height:30px;
+                background-color:white;
+                border-radius:50%;
+                border:none;
+            }
         }
-        button{
-            width:30px;
-            height:30px;
-            background-color:white;
-            border-radius:50%;
+        li:hover {
+            transform: translate(0, 0);
+                }
+    }
+
+    //ContactUs
+    .overlay{
+        h4{
+            margin-left: 50px;
+            border-left:5px solid red;
+            padding-left:5px;
+        }
+        button#btnPopup{
+            display:flex;
+            margin:auto;
             border:none;
+            margin-bottom: 35px;
+        }
+        .popup{
+            display:none;
+            padding: 10px 0 10px 0; 
+            margin-bottom: 30px!important;
+            width:70%;
+            border-radius: 5px;
+            background-color: rgb(228, 228, 228);
+            box-shadow: 15px 20px 0 rgba(0,0,0,0.5);
+            button#btnClose{
+                display:flex;
+                margin:auto;
+            } 
         }
     }
-    li:hover {
-        transform: translate(0, 0);
+
+    //footer
+    
+    footer{
+        background-color: rgb(14, 13, 13);
+        color: white;
+        }
+
+        .subUs{
+            margin:10px;
+            h4{
+                padding-top: 50px;
+                color:#fe4240!important;
+                display: flex;
+                justify-content: center!important;
             }
-}
-}
+
+            input{
+                color:gray;
+                font-size: 10px;
+                width: 300px; 
+                height: 30px;  
+            }
+            button.send{
+                background-color:#fe4240!important;
+                color:white!important;
+                border: none!important; 
+                height: 30px;
+            }
+        }
+
+        hr {
+            border : 0.8px solid rgb(39, 38, 38);
+        }
+
+        a{
+            color:gray;
+            font-size: 0.8em;
+        }          
+        .row.container-fluid {
+            display:flex;
+            justify-content: space-between;
+            margin: 0 10px 0 10px;
+            
+            .logo{
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.8em;
+                .redlogo{
+                    color:#fe4240;
+            }
+        }
+        
+        button.button{
+            margin-bottom: 5px!important;
+            background-color: rgb(64, 64, 64)!important; 
+            border: none!important; 
+            color:rgb(191, 191, 191)!important;   
+        }
+        .block{
+            padding:2px;
+            }
+            .lorem{
+                color:gray;
+                font-size: 10px;
+                align-items: flex-start;
+            }      
+        }    
+        .cine{
+            width:70px;
+            height:90px;
+        }
+        #connectUs{
+            background-color:rgb(14, 13, 13);
+            color: white;
+            border: 0.5px solid gray;
+            width:30px;
+            height:30px;
+            margin-bottom: 30px;
+            margin-left: 5px;
+            }
+        #scrollUp{
+            position: fixed;
+            bottom: 10px;
+            right: -100px;    
+            font-size: 4em;    
+        }  
+    }
+
+
+
