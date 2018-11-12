@@ -1,27 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900');
+
 *{
     box-sizing:border-box;
-    font-family:sans-serif;
+    font-family:sans-serif
 }
-.navbar{
-    .logo{
-        font-weight:bold;
-        .redlogo{
+
+
+/* POP UP AGE */
+#popupage{
+position:fixed;
+left:50%;
+width:100%;
+height:100%;
+transform: translateX(-50%);
+background-color: rgba(0, 0, 0, 0.9);
+color:#fff;
+z-index:9999;
+display:flex;
+justify-content:center;
+flex-direction:column;
+
+
+    .quest{
+        height:30px;
+        margin-right:10px;
+        line-height:5px;
+        padding:30px;
+        border:2px solid #fe4240;
+        margin: 0 28% 0 28%;
+        text-align:center;
+        font-size:25px;
+    }
+
+    .just-row{
+        display:flex;
+        flex-direction:row;
+        margin:0 30% 0 30%;
+        justify-content:center;
+
+        .btn{
+            background-color:rgba(255, 255, 255,1);
+            border-radius:0;
             color:#fe4240;
+            height:30px;
+            margin:5px;
+            line-height:5px;
+            padding:30px;
+            padding-left :125px;
+            padding-right:125px;
+            text-align:center;
+            margin-top:-38px;
+            font-size:25px;
+            font-weight:bold;
+
+            &:hover{
+                background-color:#fe4240;
+                color:#fff;
+                transition: all 0.8s ease;
+            }
         }
     }
 }
 
-.form-inline{
-    margin-left:600px;
-}
+/* COOKIE */
 
+#gdpr-box {
+    display: block;
+    width: 100%;
+    background-color:#111;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    padding:20px;
+    z-index: 999;
+    }
 
-.jumbotron{
-    width:100vw;
-    height:100vh;
+    #gdpr-box p {
+    /*padding: 10px 20px 20px;*/
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 20px;
     text-align:center;
+    }
 
-    h1{
-        margin-top:10%;
+    #gdpr-box a {
+    color: #fff;
+    }
+
+    #gdpr-box button.gdpr-button-accept {
+    background: none;
+    color: #fff;
+    font-size: 12px;
+    padding-left:20%;
+    }
+
+    #gdpr-box button.gdpr-button-accept,
+    #gdpr-box a.gdpr-button-settings {
+    display: block;
+    border: 2px solid #fe4240;
+    padding: 6px 5px 4px;
+    text-decoration: none;
+   /* margin: 0 0 20px 20px;*/
+    margin:auto;
+    margin-bottom:20px;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 12px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    }
+
+    #gdpr-box button.gdpr-button-accept:hover {
+    cursor: pointer;
+    }
+
+    #gdpr-box button.gdpr-button-accept:hover,
+    #gdpr-box a.gdpr-button-settings:hover {
+    background: #fe4240;
+    border:2px solid #fe4240;
+    }
+
+/* NAVBAR TOP */
+
+.navbartop{
+        
+    background:transparent;
+    margin-top:1%;
+    display:flex!important;
+    text-transform: uppercase;
+    font-size:12px;
+
+    .navright{
+        justify-content:space-between;
+        padding-left:100px;
+    }
+    a{
+    color:#fff!important;
+    }
+
+    .navbar-toggler{
+        background-color:#000;
+        opacity:0.8;
+        border-radius:0;
+        display:flex;
+        flex-direction:column;
+        margin-right:10px;
+
+        .navbar-toggler-icon{
+            color:#fff;
+            background-color:#fe4240;
+            height:3px;
+            margin:3px;
+        }
+    }
+
+    .logo{
+        font-weight:bold;
+        font-size:40px;
+        font-family: 'Roboto', sans-serif;
+        .redlogo{
+            color:#fe4240;
+        }
+    }
+
+    .genre{
+        background-color:#fe4240;
+        color:#fff!important;
+        margin-right:5px;
+    }
+    .section{
+        color:#fff!important;
+        margin-right:5px;
+        position:relative;
+    }
+
+    .boxsection{
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-right:5px;
+    }
+
+
+    .dropdown-menu{
+        background-color:#fff;
+        border-radius:0;
+
+        .dropdown-item{
+            font-size:12px;
+            color:#000!important;
+
+            &:hover{
+                color:#fff!important;
+                background-color:#fe4240;
+            }
+        }
+    }
+
+    .search{
+        position:relative;
+
+        .fa-search{
+            color:#fff!important;
+            position:absolute;
+        }
+
+        .fa{
+            right:8%;
+        }
+
+        .formborder{
+            border-radius:30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border:none;
+            height:30px;
+            
+        }
+
+        input::placeholder{
+            color:#fff;
+        }
+        .btn{
+            border-radius:30px;
+        }
     }
 }
+
+/* JUMBOTRON */
+
+.jumbotron{
+    width:100%;
+    height:100%;
+    text-align:center;
+    padding:0!important;
+    margin:0!important;
+}
+
+.carousel-inner{
+    img {
+        margin-top:-10%;
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+    } 
+}
+
+.carousel-caption{
+    bottom:35%!important;
+
+    .title{
+        font-size:50px;
+        font-weight:bold;
+    }
+
+    .sentence{
+        font-size:12px;
+        letter-spacing: 5px;
+        opacity:0.7;
+    }
+
+    .btn{
+        background-color:#fe4240;
+        border-radius:0;
+        color:#fff;
+        font-size:12px;
+
+        &:hover{
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            background-color:#747474;
+            color:#fff;
+        }
+    }
+
+    .redletter{
+        color:#fe4240;
+        font-size:53px;
+    }
+}
+
+#myCarousel {
+    width: 100%;
+}
+
+.carousel, .carousel-inner,.carousel-item{
+		width:100%;
+		height:100%;
+		background-size: cover;
+		background-position:center;
+		background-repeat: no-repeat;
+  }
+  
+  .avantoi{
+	  background-image: url('../img/avantoi.jpg');
+  }
+
+  .thestrangers{
+      background-image: url('../img/Thestrangers2.jpg');
+  }
+  .antman{
+      background-image: url('../img/antman.jpg');
+  }
+
+  .indestructibles{
+      background-image: url('../img/indestructibles.jpg');
+  }
+
+
+.carousel-indicators{
+    bottom:32%!important;
+
+    .carouselLink{
+        background-color:#fff!important;
+    }
+    .active{
+        background-color:#fe4240!important;
+    }
+}
+
+#slide{
+    width:100vw;
+    height:100vh;
+}
+
+/* NAVBAR BOTTOM */
+
+.navbarbottom{
+    background-color:#fe4240;
+    margin-top:-4.2em;
+    width:100%;
+    height:6%;
+    font-size:12px;
+    color:#fff;
+    display:flex!important;
+    justify-content:flex-start;
+    position:relative;
+
+    .contact{
+        background-color:#000;
+        margin-right:5%;
+        color:#fff;
+    }
+}
+
+/* MEDIA QUERIES RESPONSIVE */
+
+@media all and (max-width: 1024px) {
+    .navbartop{
+        background-color:#111;
+        margin-top:0%;
+    }
+
+    .navright{
+        padding-left:0px!important;
+        background-color:none;
+        padding:10px!important;
+    }
+
+    .boxsection{
+        background-color:transparent!important;
+    }
+
+    .section{
+        background-color:transparent!important;
+
+    }
+
+    .search{
+        width:100%;
+    }
+
+    .contact{
+        width:70px;
+    }
+    .carousel, .carousel-inner,.carousel-item{
+        height:97%;
+    }
+
+    .carousel-caption{
+        margin-bottom:-8%;
+    }
+
+    .carousel-indicators{
+        margin-bottom:-6%;
+    }
+
+    .navbarbottom{
+        margin-top:-22%;
+        position:absolute;
+    }
+    
+    .infos{
+        flex-direction:row!important;
+        justify-content:center!important;
+    }
+
+    .quest{
+        font-size:14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  
+    .navbarbottom{
+        margin-top:-10%;
+        position:absolute;
+    }
+    .carousel-caption{
+        margin-bottom:-3%;
+    }
+    
+  }
+  
+/*
+@media all and (min-width:768px) {
+    
+}*/
