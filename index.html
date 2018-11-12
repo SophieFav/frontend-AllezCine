@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AllezCine</title>
@@ -12,6 +12,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/styleAD.css">
+<!--Jquery-->
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -78,7 +82,6 @@
           </nav>
       </div>
     </div>
-
     <div class="jumbotron" id="home">
       <div id="slide" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
@@ -175,6 +178,105 @@
                 </div>
                  
         </div>
+<!--Section film-->
+  <div class="container">
+    <div class="row sectionFilm ">
+      <!--film 1-->
+      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film1">
+        <img src="img/poster1.jpg" alt="affiche film" width="100%">
+        <p class="filmTitre text-center" id="film1Titre"></p>
+        <div class="row filmDonnees">
+          <p class="filmDate" id="film1Date"></p>
+          <p class="filmGenre" id="film1Genre"></p>
+        </div>
+      </div>
+      <!--film 2-->
+      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film2">
+        <img src="img/poster2.jpeg" alt="affiche film" width="100%">
+        <p class="filmTitre text-center" id="film2Titre"></p>
+        <div class="row filmDonnees">
+          <p class="filmDate" id="film2Date"></p>
+          <p class="filmGenre" id="film2Genre"></p>
+        </div>
+      </div>
+      <!--film 3-->
+      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film3">
+        <img src="img/poster3.jpeg" alt="affiche film" width="100%">
+        <p class="filmTitre text-center" id="film3Titre"></p>
+        <div class="row filmDonnees">
+          <p class="filmDate" id="film3Date"></p>
+          <p class="filmGenre" id="film3Genre"></p>
+        </div>
+      </div>
+      <!--film 4-->
+      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film4">
+        <img src="img/poster4.jpg" alt="affiche film" width="100%">
+        <p class="filmTitre text-center" id="film4Titre"></p>
+        <div class="row filmDonnees">
+          <p class="filmDate" id="film4Date"></p>
+          <p class="filmGenre" id="film4Genre"></p>
+        </div>
+      </div>
+      <!--film 5-->
+      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film5">
+        <img src="img/poster5.jpg" alt="affiche film" width="100%">
+        <p class="filmTitre text-center" id="film5Titre"></p>
+        <div class="row filmDonnees">
+          <p class="filmDate" id="film5Date"></p>
+          <p class="filmGenre" id="film5Genre"></p>
+        </div>
+      </div>
+      <!--Modal-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <p class="trailer">Trailer</p>
+                </div>
+                <div class="form-group">
+                  <p class="description"></p>
+                  <p class="realisateur"></p>
+                  <p class="casting"></p>
+                  <p class="durée"></p>
+                  <p class="nationnalité"></p>
+                  <p class="year"></p>
+                  <p class="kind"></p>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Section Featured Movies-->
+  <div class="container-fluid">
+    <div class="row sectionTitle"><h2>Featured movies</h2></div>
+    <div class="row sectionBtnTri">
+      <button class="btnTous" onclick="afficher()">Tous</button>
+      <button class="btnAction">Action</button>
+      <button class="btnDrame">Drame</button>
+      <button class="btnThriller">Thriller</button>
+      <button class="btnAventure">Aventure</button>
+      <button class="btnAnimation">Animation</button>
+      <button class="btnFamille">Famille</button>
+      <button class="btnScience-fiction">Science-fiction</button>
+    </div>
+    <div class="row sectionFeaturedFilm"></div>
+    <div class="row sectionMore"></div>
+  </div>
+<script src="javascript.js"></script>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
