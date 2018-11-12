@@ -11,14 +11,6 @@
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/styleAD.css">
 <!--Jquery-->
@@ -26,114 +18,166 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+
+
+<div id="popupage">
+    <p class="quest">Avez vous plus de 18 ans?</p><br><br>
+    <div class="just-row">
+      <button class="yes btn btn-default">Oui</button>
+      <button class="no btn btn-default">Non</button>
+    </div>  
+</div>
+
+
     <div class="container-fluid content">
       <div class="container navcontent">
         <nav class="navbar navbar-expand-sm bg navbar fixed-top navbartop">
-                <!-- Brand -->
-                <a class="navbar-brand logo" href="#"><span class="redlogo">ALLEZ</span>CINE!</a>
+          <!-- Brand -->
+          <a class="navbar-brand logo" href="#"><span class="redlogo">ALLEZ</span>CINE!</a>
 
-              <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon "></span>
-                  <span class="navbar-toggler-icon "></span>
-                  <span class="navbar-toggler-icon "></span>
-                </button>
+            <!-- Toggler/collapsibe Button -->
+              <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon "></span>
+                <span class="navbar-toggler-icon "></span>
+                <span class="navbar-toggler-icon "></span>
+              </button>
 
-                <!-- Links -->
-                <div class="collapse navbar-collapse navright" id="collapsibleNavbar">
+            <!-- Links -->
+              <div class="collapse navbar-collapse navright" id="collapsibleNavbar">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
                   </li>
                   <!-- Dropdown -->
                   <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle genre" href="#" id="navbardrop" data-toggle="dropdown">
                           Genre
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Link 1</a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
+                    </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#romance">Romance</a>
+                    <a class="dropdown-item" href="#horreur">Horreur</a>
+                    <a class="dropdown-item" href="#fiction">Fiction</a>
+                    <a class="dropdown-item" href="#comedie">Comedie</a>
+                  </div>
                   </li>
+                  <li class="nav-item boxsection">
+                    <a class="nav-link section" href="#sectionFilm">Movies</a>
+                  </li>
+                  <li class="nav-item boxsection">
+                    <a class="nav-link section" href="#shop">Shop Movies</a>
+                  </li>
+                  <li class="nav-item boxsection">
+                    <a class="nav-link section" href="#features">Features Movies</a>
+                  </li>
+
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link contact" href="#contact">Contact</a>
                   </li>
-                  <form class="form-inline search inner-addon right-addon" action="/action_page.php">
-                    <i class="fa fa-search"></i>
-                    <input class="form-control mr-sm-2 formborder" type="text" placeholder="Recherche">
-                  </form>
                 </ul>
               </div>
+              <form class="form-inline search inner-addon right-addon" action="/action_page.php">
+                <i class="fa fa-search"></i>
+                <input class="form-control mr-sm-2 formborder" type="text" placeholder="Recherche">
+              </form>
           </nav>
       </div>
     </div>
-
-    <div class="jumbotron">
-            <div id="slide" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                      <li class="carouselLink" data-target="#demo" data-slide-to="0" class="active"></li>
-                      <li class="carouselLink" data-target="#demo" data-slide-to="1"></li>
-                      <li class="carouselLink" data-target="#demo" data-slide-to="2"></li>
-                      <li class="carouselLink" data-target="#demo" data-slide-to="3"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                      <div class="carousel-item avantoi active">
-                          <!--<img src="img/avantoi.jpg" alt="film">-->
-                        <div class="carousel-caption">
-                                <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
-                                <p class="sentence">PUSH YOURSELF. DON'T SETTLE. JUST LIVE.</p>
-                                <button type="button" class="btn">WATCH TRAILER</button> 
-                        </div>   
-                      </div>
-                      <div class="carousel-item thestrangers">
-                           <!--<img src="img/Thestrangers2.jpg" alt="film">-->
-                          <div class="carousel-caption">
-                                  <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
-                                  <p class="sentence">IF YOU'RE LUCKY, YOU DIE FIRST.</p>
-                                  <button type="button" class="btn">WATCH TRAILER</button> 
-                          </div>   
-                        </div>
-                      <div class="carousel-item antman">
-                          <!--<img src="img/avantoi.jpg" alt="film">-->
-                        <div class="carousel-caption">
-                            <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
-                            <p class="sentence">HEROES DON'T GET ANY BIGGER</p>
-                            <button type="button" class="btn">WATCH TRAILER</button>
-                        </div>   
-                      </div>
-                      <div class="carousel-item indestructibles">
-                            <!--<img src="img/avantoi.jpg" alt="film">-->
-                        <div class="carousel-caption">
-                            <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
-                            <p class="sentence">THEY'RE BACK! THEY'RE SUPER HEROES AND THEY'RE INVISIBLE</p>
-                            <button type="button" class="btn">WATCH TRAILER</button>
-                        </div>   
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#slide" data-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#slide" data-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                    </a>
-                  </div>
-                  <nav class="navbar navbar-expand-sm bg navbar navbarbottom">
-                      <!-- Links -->
-                      <ul class="navbar-nav infos">
-                          <li class="nav-item">
-                             <div class="nav-link tel">(+000)009 455 4088</div>
-                            </li>
-                        <li class="nav-item">
-                          <a class="nav-link contact" href="#">login</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link contact" href="#">register</a>
-                        </li>
-                      </ul>
-                  </nav>
+    <div class="jumbotron" id="home">
+      <div id="slide" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li class="carouselLink" data-target="#demo" data-slide-to="0" class="active"></li>
+          <li class="carouselLink" data-target="#demo" data-slide-to="1"></li>
+          <li class="carouselLink" data-target="#demo" data-slide-to="2"></li>
+          <li class="carouselLink" data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item avantoi active">
+            <!--<img src="img/avantoi.jpg" alt="film">-->
+              <div class="carousel-caption">
+                <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                <p class="sentence">PUSH YOURSELF. DON'T SETTLE. JUST LIVE.</p>
+                <button type="button" class="btn">WATCH TRAILER</button> 
+              </div>   
+          </div>
+          <div class="carousel-item thestrangers">
+            <!--<img src="img/Thestrangers2.jpg" alt="film">-->
+              <div class="carousel-caption">
+                <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                <p class="sentence">IF YOU'RE LUCKY, YOU DIE FIRST.</p>
+                <button type="button" class="btn">WATCH TRAILER</button> 
+              </div>   
+          </div>
+          <div class="carousel-item antman">
+            <!--<img src="img/avantoi.jpg" alt="film">-->
+              <div class="carousel-caption">
+                <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                  <p class="sentence">HEROES DON'T GET ANY BIGGER</p>
+                  <button type="button" class="btn">WATCH TRAILER</button>
+              </div>   
+          </div>
+          <div class="carousel-item indestructibles">
+            <!--<img src="img/avantoi.jpg" alt="film">-->
+              <div class="carousel-caption">
+                <h1 class="title">LATEST <span class="redletter">ON</span>LINE <span class="redletter">MO</span>VIES</h1>
+                <p class="sentence">THEY'RE BACK! THEY'RE SUPER HEROES AND THEY'RE INVISIBLE</p>
+                <button type="button" class="btn">WATCH TRAILER</button>
+              </div>   
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slide" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slide" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-  
+      <nav class="navbar navbar-expand-sm bg navbar navbarbottom">
+        <ul class="navbar-nav infos">
+          <li class="nav-item">
+            <div class="nav-link tel">(+000)009 455 4088</div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact" href="#">login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact" href="#">register</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="gdpr-box" class="cookies-accept">
+      <p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies
+      pour réaliser des statistiques de visites anonymes. <a href="https://www.cnil.fr/fr/cookies-traceurs-que-dit-la-loi" target="_blank">En savoir plus</a></p>
+      <button class="gdpr-button-accept">Accept cookies</button>
+    </div>
+
+    <div class="modal hide fade" id="infos">
+        <div class="modal-header"> <a class="close" data-dismiss="modal">&times;</a>
+            <h3>Se connecter</h3>
+        </div>
+        <div class="modal-body">
+            <form action="login.php?l=fr" target="_blank" method="POST" class="form-horizontal">
+                 
+                <div class="control-group">
+                    <label class="control-label" for="input-email">
+                        Adresse email
+                    </label>
+                    <div class="controls">
+                        <input type="text" id="input-email" name="email" placeholder="Adresse email">
+                    </div>
+                </div>
+                 
+                <div class="control-group">
+                    <label class="control-label" for="input-password">
+                        Mot de passe
+                    </label>
+                    <div class="controls">
+                        <input type="text" id="input-password" name="email" placeholder="Mot de passe">
+                    </div>
+                </div>
+                 
+        </div>
 <!--Section film-->
   <div class="container">
     <div class="row sectionFilm ">
@@ -232,6 +276,17 @@
     <div class="row sectionFeaturedFilm"></div>
     <div class="row sectionMore"></div>
   </div>
-  <script src="javascript.js"></script>
+<script src="javascript.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script src="scrollspy.js"></script>
+<script src="js/popup_age.js"></script>
 </body>
 </html>
