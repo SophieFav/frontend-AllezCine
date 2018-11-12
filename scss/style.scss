@@ -67,7 +67,7 @@ flex-direction:column;
 #gdpr-box {
     display: block;
     width: 100%;
-    background-color:#111;
+    background-color:#333;
     color: #fff;
     position: fixed;
     bottom: 0;
@@ -330,6 +330,24 @@ flex-direction:column;
     width:100vw;
     height:100vh;
 }
+/* pop up */
+
+.modal{
+    margin-top:150px;
+}
+
+.modal-title{
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:bold;
+    color:#fe4240;
+}
+
+.formpopup{
+    color:#000;
+    text-align:left;
+}
+
 
 /* NAVBAR BOTTOM */
 
@@ -346,10 +364,13 @@ flex-direction:column;
 
     .contact{
         background-color:#000;
-        margin-right:5%;
+        margin-right:10px;
         color:#fff;
+        border-radius:0;
+        font-size:14px;
     }
 }
+
 
 /* MEDIA QUERIES RESPONSIVE */
 
@@ -407,6 +428,10 @@ flex-direction:column;
         font-size:14px;
     }
 }
+
+.socialnetwork{
+    position:fixed;
+  }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 

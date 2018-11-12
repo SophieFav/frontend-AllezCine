@@ -29,6 +29,10 @@
   -webkit-transform: translate(-90px, 0px);
           transform: translate(-90px, 0px);
 }
+.reseaux{
+    position:fixed;
+    margin-top:250px;
+}
 
 * .reseaux li p {
   overflow: hidden;
@@ -51,7 +55,7 @@
 
 * .overlay h4 {
   margin-left: 50px;
-  border-left: 5px solid red;
+  border-left: 5px solid #fe4240;
   padding-left: 5px;
 }
 
@@ -64,15 +68,23 @@
   margin-bottom: 35px;
 }
 
+.btn-default{
+    padding:5px;
+    background-color:#fe4240;
+    color:#fff;
+}
+
+.btn-default:hover{
+    background-color
+}
+
 * .overlay .popup {
   display: none;
-  padding: 10px 0 10px 0;
-  margin-bottom: 30px !important;
-  width: 70%;
-  border-radius: 5px;
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 100px !important;
+  margin-top:20px;
+  width: 80%;
   background-color: #e4e4e4;
-  -webkit-box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 * .overlay .popup button#btnClose {
@@ -87,6 +99,14 @@
   color: white;
 }
 
+.date_link{
+    color:#747474;
+}
+
+.genre_link{
+    color:#747474;
+}
+
 * .subUs {
   margin: 10px;
 }
@@ -98,26 +118,28 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -ms-flex-pack: center !important;
+   justify-content: center !important;
 }
 
 * .subUs input {
   color: gray;
   font-size: 10px;
   width: 300px;
-  height: 30px;
+  padding:5px;
 }
 
 * .subUs button.send {
   background-color: #fe4240 !important;
   color: white !important;
   border: none !important;
-  height: 30px;
+  padding:3px;
+  font-size:15px;
 }
 
+
 * hr {
-  border: 0.8px solid #272626;
+  background-color:#333;
 }
 
 * a {
@@ -130,8 +152,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0 10px 0 10px;
 }
 
@@ -146,9 +168,11 @@
 
 * .row.container-fluid button.button {
   margin-bottom: 5px !important;
-  background-color: #404040 !important;
+  background-color: #222 !important;
   border: none !important;
   color: #bfbfbf !important;
+  padding:5px;
+  font-size:12px;
 }
 
 * .row.container-fluid .block {
@@ -161,6 +185,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.socialnetwork{
+    position:fixed;
 }
 
 * .cine {

@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 520) {
+	  if (scroll > 200) {
 	    $(".navbartop").css("background" , "#333");
 	  }
 

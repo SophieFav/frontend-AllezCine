@@ -91,6 +91,13 @@
           </nav>
       </div>
     </div>
+    <!--Boutons réseaux-->
+    <ul class="reseaux">
+        <li style="background-color: rgb(0, 172, 237)" ><p>Twitter</p><button name="twitter"  id= "twit" type="clicker" class="fab fa-twitter"></button></li>
+        <li style="background-color: rgb(59, 89, 152)" ><p>Facebook</p><button name="facebook"  id= "facebook" type="clicker" class="fab fa-facebook-f"> </div></li>
+        <li style="background-color: rgb(234, 76, 137)" > <p>Dribbble</p><button name="dribbble" id="connect" type="" class="fas fa-basketball-ball"></button></li>
+        <li style="background-color: rgb(219, 68, 55)"><p>Google+</p><button name="google+" id="google" class="fab fa-google-plus-g"></button></li>
+    </ul>
     <div class="jumbotron" id="home">
       <div id="slide" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
@@ -146,10 +153,81 @@
             <div class="nav-link tel">(+000)009 455 4088</div>
           </li>
           <li class="nav-item">
-            <a class="nav-link contact" href="#">login</a>
+              <button type="button" class="btn btn-default contact" data-toggle="modal" data-target="#myModal">
+                  Login
+                </button>  
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Login</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body formpopup">
+                        <form>
+                              <p>Please fill in this form to login</p>
+                          
+                              <label for="email"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" name="email" required><br>
+                          
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="psw" required><br>
+                        </form>
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">login</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link contact" href="#">register</a>
+            <button type="button" class="btn btn-default contact" data-toggle="modal" data-target="#myModal_R">
+              Register 
+            </button>       
+            <!-- The Modal -->
+          <div class="modal" id="myModal_R">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body formpopup">
+                      <form>
+                          <p>Please fill in this form to create an account.</p>
+                      
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" placeholder="Enter Email" name="email" required><br>
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" placeholder="Enter Password" name="psw" required><br>
+                      
+                          <label for="psw-repeat"><b>Repeat Password</b></label>
+                          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    </form>
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Submit</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -189,7 +267,7 @@
         </div>
     </div>
 <!--Section film-->
-  <div class="container">
+  <div class="container" id="sectionFilm">
     <div class="row sectionFilm ">
       <!--film 1-->
       <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film1">
@@ -271,7 +349,7 @@
     </div>
   </div>
   <!--Section Featured Movies-->
-  <div class="container-fluid">
+  <div class="container-fluid" id="features">
     <div class="row sectionTitle"><h2>Featured movies</h2></div>
     <div class="row sectionBtnTri">
       <button class="btnTous" onclick="afficher()">Tous</button>
@@ -287,20 +365,14 @@
     <div class="row sectionMore"></div>
   </div>
       
-      <!--Boutons réseaux-->
-    <ul class="reseaux">
-        <li style="background-color: rgb(0, 172, 237)" ><p>Twitter</p><button name="twitter"  id= "twit" type="clicker" class="fab fa-twitter"></button></li>
-        <li style="background-color: rgb(59, 89, 152)" ><p>Facebook</p><button name="facebook"  id= "facebook" type="clicker" class="fab fa-facebook-f"> </div></li>
-        <li style="background-color: rgb(234, 76, 137)" > <p>Dribbble</p><button name="dribbble" id="connect" type="" class="fas fa-basketball-ball"></button></li>
-        <li style="background-color: rgb(219, 68, 55)"><p>Google+</p><button name="google+" id="google" class="fab fa-google-plus-g"></button></li>
-    </ul>
+    
       <!-- block contact us -->
-    <section>
+    <section id="contact">
         <div class= "overlay">
             <div class="contactUs container-fluid">
                 
                     <h4>CONTACT US</h4>
-                    <button id="btnPopup" class="btnPopup btn-danger">SEND MESSAGE</button>
+                    <button id="btnPopup" class="btnPopup btn-default">SEND MESSAGE</button>
                
                 <div class="row overlay d-flex justify-content-center">
                     <div id="popup" class="popup">
@@ -325,7 +397,7 @@
                                 <label for="message"></label>
                                 <textarea class="form-control" id="message" rows="2" placeholder="YOUR MESSAGE"></textarea>
                             </div>
-                            <button id="btnClose" class="btnClose btn-danger">SEND MESSAGE</button>
+                            <button id="btnClose" class="btnClose btn-default">SEND MESSAGE</button>
                         </form>
                     </div>  
                 </div>
@@ -351,22 +423,22 @@
                 <div class="col_1">
                     <h6>RELEASE</h6>
                     <hr>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">2016</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">2015</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">2014</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">2013</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">2012</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">2011</a><br>
+                    <a class="date_link" href="https://www.apple.com/fr/itunes/charts/movies/">2016</a><br>
+                    <a class="date_link" href="https://www.apple.com/fr/itunes/charts/movies/">2015</a><br>
+                    <a class="date_link" href="https://www.apple.com/fr/itunes/charts/movies/">2014</a><br>
+                    <a class="date_link" href="https://www.apple.com/fr/itunes/charts/movies/">2013</a><br>
+                    <a class="date_link" href="https://www.apple.com/fr/itunes/charts/movies/">2012</a><br>
+                    <a class="date_link" href="https://www.apple.com/fr/itunes/charts/movies/">2011</a><br>
                 </div>
                 <div class="col_2">
                     <h6>MOVIES</h6>
                     <hr>
-                    <a href="http://www.allocine.fr/recherche/?q=aventure">ADVENTURE</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">COMEDY</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">FANTASY</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">ACTION</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">MOVIES</a><br>
-                    <a href="https://www.apple.com/fr/itunes/charts/movies/">HORROR</a><br>
+                    <a class="genre_link" href="http://www.allocine.fr/recherche/?q=aventure">ADVENTURE</a><br>
+                    <a class="genre_link" href="https://www.apple.com/fr/itunes/charts/movies/">COMEDY</a><br>
+                    <a class="genre_link" href="https://www.apple.com/fr/itunes/charts/movies/">FANTASY</a><br>
+                    <a class="genre_link" href="https://www.apple.com/fr/itunes/charts/movies/">ACTION</a><br>
+                    <a class="genre_link" href="https://www.apple.com/fr/itunes/charts/movies/">MOVIES</a><br>
+                    <a class="genre_link" href="https://www.apple.com/fr/itunes/charts/movies/">HORROR</a><br>
                 </div>
                 <div class="col_3">
                     <h6>REVIEW MOVIES</h6>
@@ -420,8 +492,9 @@
 				<button id= "connectUs" class="fab fa-linkedin-in" onclick="window.open('https://fr.linkedin.com/')"></button>
 				<button id= "connectUs" class="fab fa-youtube" onclick="window.open('https://www.youtube.com/?hl=FR')"></button>
 				<button id= "connectUs" class="fab fa-google-plus-g" onclick="window.open('https://plus.google.com/discover?hl=fr')"></button>
-            </div>
+       </div>
     </div>
+  </div>
     
 <!-- bouton arrow -->
     <div id="scrollUp">
@@ -443,5 +516,8 @@
 <script src="scrollspy.js"></script>
 <script src="js/popup_age.js"></script>
 <script src="js/navscroll.js"></script>
+<script src="js/socialnetwork.js"></script>
+<script src="js/log_popup.js"></script>
+<script src="js/register_popup.js"></script>
 </body>
 </html>
