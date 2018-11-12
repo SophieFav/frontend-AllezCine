@@ -124,7 +124,6 @@
 /* NAVBAR TOP */
 .navbartop {
   background: transparent;
-  margin-top: 1%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -205,11 +204,15 @@
 
 /* JUMBOTRON */
 .jumbotron {
-    width:100%;
-    height:100%;
-    text-align:center;
-    padding:0!important;
-    margin-top:-30px!important; }
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0 !important;
+  margin-top: -30px !important; }
+
+#slide {
+  width: 100% !important;
+  height: 100vh !important; }
 
 .carousel-inner img {
   margin-top: -10%;
