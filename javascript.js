@@ -55,7 +55,7 @@ for (i=1;i <6;i++){
 }
 
 //Créateur d'élément film et tri
-let afficher = (num)=> {
+let afficher = (catalogue,num)=> {
     
     let divSectionFeaturedFilm= document.querySelector(".sectionFeaturedFilm");
     let divFilm = document.createElement("div");
@@ -86,8 +86,216 @@ let afficher = (num)=> {
             let Genre = document.createTextNode(catalogue[num].kind.one +" - "+ catalogue[num].kind.two);
             pFilmGenre.appendChild(Genre);
 }
-for (y=0;y<6;y++){
-    for (i=0;i <(catalogue.length);i++){
-        afficher(i);
+let z=1
+let choix="" ;
+
+let filmTous =()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnTous").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    for (y=0;y<2*z;y++){
+        for (i=0;i <(catalogue.length);i++){
+        afficher(catalogue,i);
+        }
+    }
+    choix = "filmTous";
+}
+filmTous();
+let filmAction = ()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnAction").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    let catalogueAction = [];
+    for (i=0;i<catalogue.length;i++){
+        if (catalogue[i].kind.one == "Action" || catalogue[i].kind.two == "Action"){
+            catalogueAction.push(catalogue[i]);
+        }
+    }
+    for (y=0;y<1*z;y++){
+        for (i=0;i<catalogueAction.length;i++){
+            afficher(catalogueAction,i);
+        }
+    }
+    choix = "filmAction";
+}
+let filmDrame = ()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnDrame").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    let catalogueDrame = [];
+    for (i=0;i<catalogue.length;i++){
+        if (catalogue[i].kind.one == "Drame" || catalogue[i].kind.two == "Drame"){
+            catalogueDrame.push(catalogue[i]);
+        }
+    }
+    for (y=0;y<1*z;y++){
+        for (i=0;i<catalogueDrame.length;i++){
+            afficher(catalogueDrame,i);
+        }
+    }
+    choix = "filmDrame";
+}
+let filmThriller = ()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnThriller").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    let catalogueThriller = [];
+    for (i=0;i<catalogue.length;i++){
+        if (catalogue[i].kind.one == "Thriller" || catalogue[i].kind.two == "Thriller"){
+            catalogueThriller.push(catalogue[i]);
+        }
+    }
+    for (y=0;y<1*z;y++){
+        for (i=0;i<catalogueThriller.length;i++){
+            afficher(catalogueThriller,i);
+        }
+    }
+    choix = "filmThriller";
+}
+let filmAventure = ()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnAventure").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    let catalogueAventure = [];
+    for (i=0;i<catalogue.length;i++){
+        if (catalogue[i].kind.one == "Aventure" || catalogue[i].kind.two == "Aventure"){
+            catalogueAventure.push(catalogue[i]);
+        }
+    }
+    for (y=0;y<1*z;y++){
+        for (i=0;i<catalogueAventure.length;i++){
+            afficher(catalogueAventure,i);
+        }
+    }
+    choix = "filmAventure";
+}
+let filmAnimation = ()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnAnimation").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    let catalogueAnimation = [];
+    for (i=0;i<catalogue.length;i++){
+        if (catalogue[i].kind.one == "Animation" || catalogue[i].kind.two == "Animation"){
+            catalogueAnimation.push(catalogue[i]);
+        }
+    }
+    for (y=0;y<1*z;y++){
+        for (i=0;i<catalogueAnimation.length;i++){
+            afficher(catalogueAnimation,i);
+        }
+    }
+    choix = "filmAnimation";
+}
+let filmFamille = ()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnFamille").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    let catalogueFamille = [];
+    for (i=0;i<catalogue.length;i++){
+        if (catalogue[i].kind.one == "Famille" || catalogue[i].kind.two == "Famille"){
+            catalogueFamille.push(catalogue[i]);
+        }
+    }
+    for (y=0;y<1*z;y++){
+        for (i=0;i<catalogueFamille.length;i++){
+            afficher(catalogueFamille,i);
+        }
+    }
+    choix = "filmFamille";
+}
+let filmScience = ()=>{
+    $(".sectionBtnTri button").css("background-color","lightgrey");
+    $(".btnScience-fiction").css("background-color","red");
+    $(".sectionFeaturedFilm").children().remove();
+    let catalogueScience = [];
+    for (i=0;i<catalogue.length;i++){
+        if (catalogue[i].kind.one == "Science-fiction" || catalogue[i].kind.two == "Science-fiction"){
+            catalogueScience.push(catalogue[i]);
+        }
+    }
+    for (y=0;y<1*z;y++){
+        for (i=0;i<catalogueScience.length;i++){
+            afficher(catalogueScience,i);
+        }
+    }
+    choix = "filmScience";
+}
+
+let plusDeFilm = ()=>{
+    if (z<5){
+        z+=1;  
+    }
+    switch(choix){
+        case "filmTous":
+        filmTous();
+        break;
+        case "filmAction":
+        filmAction();
+        break;
+        case "filmDrame":
+        filmDrame();
+        break;
+        case "filmThriller":
+        filmThriller();
+        break;
+        case "filmAnimation":
+        filmAnimation();
+        break;
+        case "filmAventure":
+        filmAventure();
+        break;
+        case "filmFamille":
+        filmFamille();
+        break;
+        case "filmScience":
+        filmScience();
+        break;
+    }
+    cache();
+}
+let moinsDeFilm = ()=>{
+    if (z>1){
+        z-=1;
+    }
+    switch(choix){
+        case "filmTous":
+        filmTous();
+        break;
+        case "filmAction":
+        filmAction();
+        break;
+        case "filmDrame":
+        filmDrame();
+        break;
+        case "filmThriller":
+        filmThriller();
+        break;
+        case "filmAnimation":
+        filmAnimation();
+        break;
+        case "filmAventure":
+        filmAventure();
+        break;
+        case "filmFamille":
+        filmFamille();
+        break;
+        case "filmScience":
+        filmScience();
+        break;
+    }
+    cache();
+}
+let cache = ()=>{
+    if (z==1){
+        $(".moinsDeFilm").hide();
+    } else{
+        $(".moinsDeFilm").show();
+    }
+    if (z==5){
+        $(".plusDeFilm").hide();
+    }
+    else{
+        $(".plusDeFilm").show();
     }
 }
+cache();

@@ -274,17 +274,20 @@
   <div class="container-fluid">
     <div class="row sectionTitle"><h2>Featured movies</h2></div>
     <div class="row sectionBtnTri">
-      <button class="btnTous" onclick="afficher()">Tous</button>
-      <button class="btnAction">Action</button>
-      <button class="btnDrame">Drame</button>
-      <button class="btnThriller">Thriller</button>
-      <button class="btnAventure">Aventure</button>
-      <button class="btnAnimation">Animation</button>
-      <button class="btnFamille">Famille</button>
-      <button class="btnScience-fiction">Science-fiction</button>
+      <button class="btnTous" onclick="filmTous()">Tous</button>
+      <button class="btnAction" onclick="filmAction()">Action</button>
+      <button class="btnDrame" onclick="filmDrame()">Drame</button>
+      <button class="btnThriller" onclick="filmThriller()">Thriller</button>
+      <button class="btnAventure" onclick="filmAventure()">Aventure</button>
+      <button class="btnAnimation" onclick="filmAnimation()">Animation</button>
+      <button class="btnFamille" onclick="filmFamille()">Famille</button>
+      <button class="btnScience-fiction" onclick="filmScience()">Science-fiction</button>
     </div>
     <div class="row sectionFeaturedFilm"></div>
-    <div class="row sectionMore"></div>
+    <div class="row sectionMore">
+      <button class="plusDeFilm" onclick="plusDeFilm()">Afficher plus de film</button>
+      <button class="moinsDeFilm" onclick="moinsDeFilm()">Afficher moins de film</button>
+    </div>
   </div>
       
       <!--Boutons réseaux-->

@@ -34,14 +34,22 @@ body .container-fluid .sectionTitle h2 {
 }
 
 body .container-fluid .sectionBtnTri {
-  margin: 0;
+  margin: 0 0 25px 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 body .container-fluid .sectionBtnTri button {
   border: none;
   background-color: lightgrey;
   margin: 1px;
+  padding: 5px 10px;
 }
 
 body .container-fluid .sectionFeaturedFilm {
@@ -52,12 +60,27 @@ body .container-fluid .sectionFeaturedFilm {
       justify-content: space-around;
 }
 
+body .container-fluid .sectionMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container-fluid .sectionMore button {
+  background-color: red;
+  padding: 5px 10px;
+  color: white;
+}
+
 .film {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
-  margin: 0px 5px;
+  padding: 2.5px;
+  margin: 0px;
 }
 
 .film .filmTitre {

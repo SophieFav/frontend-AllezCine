@@ -23,28 +23,37 @@ body{
             }
         }
         .sectionBtnTri{
-            margin: 0;
-            padding: 0;
+            margin: 0 0 25px 0;
+            padding:0;
+            display: flex;
+            flex-flow: row wrap;
             button{
                 border: none;
                 background-color: lightgrey;
                 margin: 1px;
+                padding: 5px 10px ;
             }
         }
         .sectionFeaturedFilm{
             display: flex;
             justify-content:space-around;
         }
-        .setionMore{
-
+        .sectionMore{
+            display: flex;
+            justify-content: center;
+            button{
+                background-color: red ;
+                padding: 5px 10px ;
+                color: white;
+            }
         }
     }
 }
 .film{
                 
     justify-content: center;
-    padding: 0;
-    margin: 0px 5px;
+    padding: 2.5px;
+    margin: 0px ;
     img{
 
     }
