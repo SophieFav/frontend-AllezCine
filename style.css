@@ -109,6 +109,7 @@
 
 * .subUs {
   margin: 10px;
+  margin-top:30px;
 }
 
 * .subUs h4 {
@@ -193,6 +194,11 @@
 * .cine {
   width: 70px;
   height: 90px;
+}
+
+
+.imgarrow{
+    width:50px;
 }
 
 * #connectUs {
