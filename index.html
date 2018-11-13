@@ -18,7 +18,7 @@
 <script src="jquery-3.3.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- head AC-->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -95,15 +95,15 @@
     </div>
     <!--Boutons réseaux-->
     <ul class="reseaux">
-        <li style="background-color: rgb(0, 172, 237)" ><p>Twitter</p><button name="twitter"  id= "twit" type="clicker" class="fab fa-twitter"></button></li>
-        <li style="background-color: rgb(59, 89, 152)" ><p>Facebook</p><button name="facebook"  id= "facebook" type="clicker" class="fab fa-facebook-f"> </div></li>
-        <li style="background-color: rgb(234, 76, 137)" > <p>Dribbble</p><button name="dribbble" id="connect" type="" class="fas fa-basketball-ball"></button></li>
+        <li style="background-color: rgb(0, 172, 237)" ><p>Twitter</p><button name="twitter"  id= "twit" class="fab fa-twitter"></button></li>
+        <li style="background-color: rgb(59, 89, 152)" ><p>Facebook</p><button name="facebook"  id= "facebook" class="fab fa-facebook-f"></button></li>
+        <li style="background-color: rgb(234, 76, 137)" > <p>Dribbble</p><button name="dribbble" id="connect" class="fas fa-basketball-ball"></button></li>
         <li style="background-color: rgb(219, 68, 55)"><p>Google+</p><button name="google+" id="google" class="fab fa-google-plus-g"></button></li>
     </ul>
     <div class="jumbotron" id="home">
       <div id="slide" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
-          <li class="carouselLink" data-target="#demo" data-slide-to="0" class="active"></li>
+          <li class="carouselLink active" data-target="#demo" data-slide-to="0"></li>
           <li class="carouselLink" data-target="#demo" data-slide-to="1"></li>
           <li class="carouselLink" data-target="#demo" data-slide-to="2"></li>
           <li class="carouselLink" data-target="#demo" data-slide-to="3"></li>
@@ -174,10 +174,10 @@
                         <form>
                               <p>Please fill in this form to login</p>
                           
-                              <label for="email"><b>Email</b></label>
+                              <label><b>Email</b></label>
                               <input type="text" placeholder="Enter Email" name="email" required><br>
                           
-                              <label for="psw"><b>Password</b></label>
+                              <label><b>Password</b></label>
                               <input type="password" placeholder="Enter Password" name="psw" required><br>
                         </form>
                     </div>
@@ -211,13 +211,13 @@
                       <form>
                           <p>Please fill in this form to create an account.</p>
                       
-                          <label for="email"><b>Email</b></label>
+                          <label><b>Email</b></label>
                           <input type="text" placeholder="Enter Email" name="email" required><br>
                       
-                          <label for="psw"><b>Password</b></label>
+                          <label><b>Password</b></label>
                           <input type="password" placeholder="Enter Password" name="psw" required><br>
                       
-                          <label for="psw-repeat"><b>Repeat Password</b></label>
+                          <label><b>Repeat Password</b></label>
                           <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
                     </form>
                   </div>
@@ -264,16 +264,16 @@
                     <div class="controls">
                         <input type="text" id="input-password" name="email" placeholder="Mot de passe">
                     </div>
-                </div>
-                 
+		</div>
+	    </form>
         </div>
     </div>
 <!--Section film-->
   <div class="container" id="sectionFilm">
     <div class="row sectionFilm ">
       <!--film 1-->
-      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film1">
-        <img src="img/poster1.jpg" alt="affiche film" width="100%">
+      <div class="col-12 col-md-4 col-lg-2 film btn" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film1">
+        <img src="img/poster1.jpg" alt="affiche film" width="100">
         <p class="filmTitre text-center" id="film1Titre"></p>
         <div class="row filmDonnees">
           <p class="filmDate" id="film1Date"></p>
@@ -281,8 +281,8 @@
         </div>
       </div>
       <!--film 2-->
-      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film2">
-        <img src="img/poster2.jpeg" alt="affiche film" width="100%">
+      <div class="col-12 col-md-4 col-lg-2 film btn" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film2">
+        <img src="img/poster2.jpeg" alt="affiche film" width="100">
         <p class="filmTitre text-center" id="film2Titre"></p>
         <div class="row filmDonnees">
           <p class="filmDate" id="film2Date"></p>
@@ -290,8 +290,8 @@
         </div>
       </div>
       <!--film 3-->
-      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film3">
-        <img src="img/poster3.jpeg" alt="affiche film" width="100%">
+      <div class="col-12 col-md-4 col-lg-2 film btn" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film3">
+        <img src="img/poster3.jpeg" alt="affiche film" width="100">
         <p class="filmTitre text-center" id="film3Titre"></p>
         <div class="row filmDonnees">
           <p class="filmDate" id="film3Date"></p>
@@ -299,8 +299,8 @@
         </div>
       </div>
       <!--film 4-->
-      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film4">
-        <img src="img/poster4.jpg" alt="affiche film" width="100%">
+      <div class="col-12 col-md-4 col-lg-2 film btn" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film4">
+        <img src="img/poster4.jpg" alt="affiche film" width="100">
         <p class="filmTitre text-center" id="film4Titre"></p>
         <div class="row filmDonnees">
           <p class="filmDate" id="film4Date"></p>
@@ -308,8 +308,8 @@
         </div>
       </div>
       <!--film 5-->
-      <div class="col-12 col-md-4 col-lg-2 film btn" type="button" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film5">
-        <img src="img/poster5.jpg" alt="affiche film" width="100%">
+      <div class="col-12 col-md-4 col-lg-2 film btn" data-toggle="modal" data-target="#exampleModal" data-whatever="" id="film5">
+        <img src="img/poster5.jpg" alt="affiche film" width="100">
         <p class="filmTitre text-center" id="film5Titre"></p>
         <div class="row filmDonnees">
           <p class="filmDate" id="film5Date"></p>
@@ -317,7 +317,7 @@
         </div>
       </div>
       <!--Modal-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -392,14 +392,14 @@
   <div class="container-fluid containerShopMovie">
     <div class="row sectionTitle"><h2>Shop Movie</h2></div>
     <div class="row btnFleche d-flex justify-content-end">
-        <span class="prev"><</span>
+        <span class="prev">&lt</span>
         <span class="next">></span>
     </div>
     <div class="row sectionShopMovie">
       <div class="col-12 col-md-12 col-lg-7">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster1.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster1.jpg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -407,7 +407,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster2.jpeg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster2.jpeg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -415,7 +415,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster3.jpeg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster3.jpeg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -423,7 +423,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster4.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster4.jpg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -433,7 +433,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster5.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster5.jpg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -441,7 +441,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster6.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster6.jpg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -449,7 +449,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster1.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster1.jpg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -457,7 +457,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-              <img src="img/poster2.jpeg" alt="afficheFilm" width="100%" class="imageShop">
+              <img src="img/poster2.jpeg" alt="afficheFilm" width="100" class="imageShop">
               <p class="shopTitre text-center">Blablabla Titre</p>
               <div class="row shopDonnees">
                 <p class="filmDate">2018</p>
@@ -471,7 +471,7 @@
             <div id="slider">
                 <ul>
                     <li class="position-absolute">
-                      <img src="img/poster1.jpg">
+                      <img src="img/poster1.jpg" alt="poster">
                       <p class="sliderTitre">Blablabla 1</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -494,7 +494,7 @@
                       </div>
                     </li>
                     <li class="position-absolute">
-                      <img src="img/poster2.jpeg">
+                      <img src="img/poster2.jpeg" alt="poster">
                       <p class="sliderTitre">Blablabla 2</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -517,7 +517,7 @@
                       </div>
                     </li>
                     <li class="position-absolute">
-                      <img src="img/poster3.jpeg">
+                      <img src="img/poster3.jpeg" alt="poster">
                       <p class="sliderTitre">Blablabla 3</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -540,7 +540,7 @@
                       </div>
                     </li>
                     <li class="position-absolute">
-                      <img src="img/poster4.jpg">
+                      <img src="img/poster4.jpg" alt="poster">
                       <p class="sliderTitre">Blablabla 4</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -563,7 +563,7 @@
                       </div>
                     </li>
                     <li class="position-absolute">
-                      <img src="img/poster5.jpg">
+                      <img src="img/poster5.jpg" alt="poster">
                       <p class="sliderTitre">Blablabla 5</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -586,7 +586,7 @@
                       </div>
                     </li>
                     <li class="position-absolute">
-                      <img src="img/poster6.jpg">
+                      <img src="img/poster6.jpg" alt="poster">
                       <p class="sliderTitre">Blablabla 6</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -609,7 +609,7 @@
                       </div>
                     </li>
                     <li class="position-absolute">
-                      <img src="img/poster1.jpg">
+                      <img src="img/poster1.jpg" alt="poster">
                       <p class="sliderTitre">Blablabla 7</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -632,7 +632,7 @@
                       </div>
                     </li>
                     <li class="position-absolute">
-                      <img src="img/poster2.jpeg">
+                      <img src="img/poster2.jpeg" alt="poster">
                       <p class="sliderTitre">Blablabla 8</p>
                       <div class="row justify-content-between">
                         <p class="storyLine">Story line:</p>
@@ -758,10 +758,10 @@
                 <div class="col_4">
                     <h6 >LATEST MOVIES</h6>
                     <hr>
-                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem">  Evenlet Ut Molesti</span><br>
-                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem">  Earum Rerum Tenet</span><br>
-                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem">  Evenlet Ut Molesti</span><br>
-                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem">  Earum Rerum Tenet</span><br>
+                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem" alt="poster">  Evenlet Ut Molesti</span><br>
+                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem" alt="poster">  Earum Rerum Tenet</span><br>
+                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem" alt="poster">  Evenlet Ut Molesti</span><br>
+                    <img class="block " src="https://via.placeholder.com/80x50"><span class="lorem" alt="poster">  Earum Rerum Tenet</span><br>
                 </div>
                 <div class="col_5">
                     <a class= "logo" ><span class="redlogo">ALLEZ</span>CINE!</a>
@@ -783,18 +783,18 @@
 		<div>
 			<h4>CONNECT US</h4>
 			<div class="row connect">
-				<button id= "connectUs" class="fab fa-facebook-f" onclick="window.open('https://fr-fr.facebook.com/cinema.descineastes/')"></button>
-				<button id= "connectUs" class="fab fa-twitter" onclick="window.open('https://twitter.com/mycineplus')"></button>
-				<button id= "connectUs" class="fab fa-linkedin-in" onclick="window.open('https://fr.linkedin.com/')"></button>
-				<button id= "connectUs" class="fab fa-youtube" onclick="window.open('https://www.youtube.com/?hl=FR')"></button>
-				<button id= "connectUs" class="fab fa-google-plus-g" onclick="window.open('https://plus.google.com/discover?hl=fr')"></button>
+				<button class="fab fa-facebook-f connectUs" onclick="window.open('https://fr-fr.facebook.com/cinema.descineastes/')"></button>
+				<button class="fab fa-twitter connectUs" onclick="window.open('https://twitter.com/mycineplus')"></button>
+				<button class="fab fa-linkedin-in connectUs" onclick="window.open('https://fr.linkedin.com/')"></button>
+				<button class="fab fa-youtube connectUs" onclick="window.open('https://www.youtube.com/?hl=FR')"></button>
+				<button class="fab fa-google-plus-g connectUs" onclick="window.open('https://plus.google.com/discover?hl=fr')"></button>
        </div>
     </div>
   </div>
     
 <!-- bouton arrow -->
     <div id="scrollUp">
-        <a href="#top"><img class="imgarrow" src="img/arrow.svg"alt=""></a> 
+        <a href="#top"><img class="imgarrow" src="img/arrow.svg" alt=""></a> 
     </div> 
     <script src="script.js"></script> 
 </footer>
