@@ -83,12 +83,12 @@ body .container-fluid .sectionMore button {
   margin: 0px;
 }
 
-.film .filmTitre {
+.filmTitre {
   font-size: 1em;
   width: 100%;
 }
 
-.film .filmDonnees {
+.filmDonnees {
   margin: 0;
   padding: 5px;
   display: -webkit-box;
@@ -102,5 +102,85 @@ body .container-fluid .sectionMore button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 0.5em;
+}
+
+.filmPrix {
+  color: red;
+}
+
+.shopDonnees {
+  margin: 0;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.5em;
+  background-color: lightgrey;
+}
+
+.shopTitre {
+  font-size: 1em;
+  width: 100%;
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.imageShop {
+  margin-top: 4px;
+}
+
+.containerShopMovie {
+  margin: 0;
+  width: 100% !important;
+}
+
+#slider {
+  width: 100%;
+}
+
+#slider ul {
+  width: 100%;
+}
+
+#slider ul li {
+  width: 100%;
+  background-color: black;
+  font-size: 0.6em;
+}
+
+#slider ul li img {
+  width: 100%;
+  height: 350px !important;
+}
+
+#slider ul li .sliderTitre {
+  color: red;
+  font-size: 2em;
+}
+
+#slider ul li .row {
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+  color: white;
+}
+
+#slider ul li .row .storyLine {
+  color: red;
+}
+
+.btnFleche span {
+  color: white;
+  background-color: black;
+  padding: 0 5px 0 5px;
+  margin: 1px;
 }
 /*# sourceMappingURL=styleAD.css.map */
