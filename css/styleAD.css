@@ -23,7 +23,7 @@ body .container-fluid {
 }
 
 body .container-fluid .sectionTitle {
-  border-left: solid 5px red;
+  border-left: solid 5px #fe4240;
   margin: 0 0 25px 0;
   padding: 0;
 }
