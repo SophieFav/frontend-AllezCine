@@ -5,6 +5,10 @@
     
     //boutons réseaux
     .reseaux{
+        position: fixed;
+        left:0;
+        top:50%;
+        z-index: 9999;
         li{
             display:flex;
             flex-direction: row;
@@ -135,7 +139,7 @@
             width:70px;
             height:90px;
         }
-        #connectUs{
+        .connectUs{
             background-color:rgb(14, 13, 13);
             color: white;
             border: 0.5px solid gray;
@@ -152,5 +156,10 @@
         }  
     }
 
-
+.date_link{
+    color:#747474;
+}
+.genre_link{
+    color:#747474;
+}
 
