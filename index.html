@@ -274,17 +274,311 @@
   <div class="container-fluid">
     <div class="row sectionTitle"><h2>Featured movies</h2></div>
     <div class="row sectionBtnTri">
-      <button class="btnTous" onclick="afficher()">Tous</button>
-      <button class="btnAction">Action</button>
-      <button class="btnDrame">Drame</button>
-      <button class="btnThriller">Thriller</button>
-      <button class="btnAventure">Aventure</button>
-      <button class="btnAnimation">Animation</button>
-      <button class="btnFamille">Famille</button>
-      <button class="btnScience-fiction">Science-fiction</button>
+      <button class="btnTous" onclick="filmTous()">Tous</button>
+      <button class="btnAction" onclick="filmAction()">Action</button>
+      <button class="btnDrame" onclick="filmDrame()">Drame</button>
+      <button class="btnThriller" onclick="filmThriller()">Thriller</button>
+      <button class="btnAventure" onclick="filmAventure()">Aventure</button>
+      <button class="btnAnimation" onclick="filmAnimation()">Animation</button>
+      <button class="btnFamille" onclick="filmFamille()">Famille</button>
+      <button class="btnScience-fiction" onclick="filmScience()">Science-fiction</button>
     </div>
     <div class="row sectionFeaturedFilm"></div>
-    <div class="row sectionMore"></div>
+    <div class="row sectionMore">
+      <button class="plusDeFilm" onclick="plusDeFilm()">Afficher plus de film</button>
+      <button class="moinsDeFilm" onclick="moinsDeFilm()">Afficher moins de film</button>
+    </div>
+  </div>
+  <!--Section Featured Series-->
+  <div class="container-fluid">
+      <div class="row sectionTitle"><h2>Featured séries TV</h2></div>
+      <div class="row sectionBtnTri">
+        <button class="btnTous" onclick="serieTous()">Tous</button>
+        <button class="btnAction" onclick="serieAction()">Action</button>
+        <button class="btnDrame" onclick="serieDrame()">Drame</button>
+        <button class="btnThriller" onclick="serieThriller()">Thriller</button>
+        <button class="btnAventure" onclick="serieAventure()">Aventure</button>
+        <button class="btnAnimation" onclick="serieAnimation()">Animation</button>
+        <button class="btnFamille" onclick="serieFamille()">Famille</button>
+        <button class="btnScience-fiction" onclick="serieScience()">Science-fiction</button>
+      </div>
+      <div class="row sectionFeaturedSerie"></div>
+      <div class="row sectionMore">
+        <button class="plusDeSerie" onclick="plusDeSerie()">Afficher plus de serie</button>
+        <button class="moinsDeSerie" onclick="moinsDeSerie()">Afficher moins de serie</button>
+      </div>
+    </div>
+    <!--Section Shop Movies-->
+  <div class="container-fluid containerShopMovie">
+    <div class="row sectionTitle"><h2>Shop Movie</h2></div>
+    <div class="row btnFleche d-flex justify-content-end">
+        <span class="prev"><</span>
+        <span class="next">></span>
+    </div>
+    <div class="row sectionShopMovie">
+      <div class="col-12 col-md-12 col-lg-7">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster1.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster2.jpeg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster3.jpeg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster4.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster5.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster6.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster1.jpg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="img/poster2.jpeg" alt="afficheFilm" width="100%" class="imageShop">
+              <p class="shopTitre text-center">Blablabla Titre</p>
+              <div class="row shopDonnees">
+                <p class="filmDate">2018</p>
+                <p class="filmPrix">10€</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-5 position-relative">
+        <div class="row">
+            <div id="slider">
+                <ul>
+                    <li class="position-absolute">
+                      <img src="img/poster1.jpg">
+                      <p class="sliderTitre">Blablabla 1</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                    <li class="position-absolute">
+                      <img src="img/poster2.jpeg">
+                      <p class="sliderTitre">Blablabla 2</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                    <li class="position-absolute">
+                      <img src="img/poster3.jpeg">
+                      <p class="sliderTitre">Blablabla 3</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                    <li class="position-absolute">
+                      <img src="img/poster4.jpg">
+                      <p class="sliderTitre">Blablabla 4</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                    <li class="position-absolute">
+                      <img src="img/poster5.jpg">
+                      <p class="sliderTitre">Blablabla 5</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                    <li class="position-absolute">
+                      <img src="img/poster6.jpg">
+                      <p class="sliderTitre">Blablabla 6</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                    <li class="position-absolute">
+                      <img src="img/poster1.jpg">
+                      <p class="sliderTitre">Blablabla 7</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                    <li class="position-absolute">
+                      <img src="img/poster2.jpeg">
+                      <p class="sliderTitre">Blablabla 8</p>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Story line:</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima magnam, praesentium veniam expedita aperiam! Non laboriosam saepe deleniti aperiam rerum, reprehenderit eligendi, odit veniam, similique quam iusto provident placeat.</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Release on:</p>
+                        <p>Un jour dans l'année</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Genres:</p>
+                        <p>Amateur</p>
+
+                      </div>
+                      <div class="row justify-content-between">
+                        <p class="storyLine">Price:</p>
+                        <p>100 patates</p>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
       
       <!--Boutons réseaux-->
